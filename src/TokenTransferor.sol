@@ -185,7 +185,7 @@ contract TokenTransferor is OwnerIsCreator {
     /// @notice Allows the owner of the contract to withdraw all tokens of a specific ERC20 token.
     /// @dev This function reverts with a 'NothingToWithdraw' error if there are no tokens to withdraw.
     /// @param _beneficiary The address to which the tokens will be sent.
-    /// @param _token The contract address of the ERC20 token to be withdrawn
+    /// @param _token The contract address of the ERC20 token to be withdrawn.
     function withdrawToken(address _beneficiary, address _token) public onlyOwner {
         // Retrieve the balance of this contract
         uint256 amount = IERC20(_token).balanceOf(address(this));
