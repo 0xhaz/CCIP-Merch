@@ -9,6 +9,6 @@ import {Client} from "@chainlink/contracts-ccip/src/v0.8/ccip/libraries/Client.s
 interface IAny2EVMMessageReceiver {
     /// @notice Router calls this to deliver a message
     /// @param message CCIP Message
-    /// @dev Not ensure you check that msg.sender is the Router
+    /// @dev Not ensure you check that msg.sender is the Router.
     function ccipReceive(Client.Any2EVMMessage calldata message) external;
 }
