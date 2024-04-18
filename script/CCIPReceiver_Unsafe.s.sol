@@ -9,7 +9,7 @@ contract DeployCCIPReceiver_Unsafe is Script {
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
 
-        address sepoliaRouter = 0xD0daae2231E9CB96b94C8512223533293C3693Bf;
+        address sepoliaRouter = 0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59;
 
         CCIPReceiver_Unsafe receiver = new CCIPReceiver_Unsafe(sepoliaRouter);
 
